@@ -10,7 +10,33 @@
 
 <body>
     <h1>Make an Appointment</h1>
-    <form action="booking_success.html" method="get">
+    <form action="booking_success.html" method="post">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" name="p_name" />
+                </td>
+            </tr>
+            <tr>
+                <td>HKID:</td>
+                <td>
+                    <input type="text" name="p_hkid" />
+                    (
+                    <input type="text" name="p_hkid_last" maxlength="1" />
+                    )
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="gender_male" name="p_gender" value="male" />
+                    <label for="gender_male">Male</label>
+                    <input type="radio" id="gender_female" name="p_gender" value="female" />
+                    <label for="gender_female">Female</label>
+                </td>
+            </tr>
+        </table>
         <input type="submit" />
     </form>
     <a href="booking_success.html">Here to booking success page. Above button not working here.</a>
