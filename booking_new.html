@@ -9,35 +9,112 @@
 </head>
 
 <body>
-    <h1>Make an Appointment</h1>
+    <table width="100%">
+        <tr>
+            <td>
+                <a href="index.html">
+                    <img src="icons/arrow_back.svg" width="28" height="28" />
+                </a>
+            </td>
+            <td>
+                <h2>Make an Appointment</h2>
+            </td>
+        </tr>
+    </table>
     <form action="booking_success.html" method="post">
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td>
-                    <input type="text" name="p_name" />
-                </td>
-            </tr>
-            <tr>
-                <td>HKID:</td>
-                <td>
-                    <input type="text" name="p_hkid" />
-                    (
-                    <input type="text" name="p_hkid_last" maxlength="1" />
-                    )
-                </td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td>
-                    <input type="radio" id="gender_male" name="p_gender" value="male" />
-                    <label for="gender_male">Male</label>
-                    <input type="radio" id="gender_female" name="p_gender" value="female" />
-                    <label for="gender_female">Female</label>
-                </td>
-            </tr>
-        </table>
-        <input type="submit" />
+        <fieldset>
+            <legend>Patients</legend>
+            <table cellpadding="4">
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="p_name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hkid">HKID:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="hkid" name="p_hkid" required />
+                        (
+                        <input type="text" name="p_hkid_last" maxlength="1" required />
+                        )
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <input type="radio" id="gender_male" name="p_gender" value="male" />
+                        <label for="gender_male">Male</label>
+                        <input type="radio" id="gender_female" name="p_gender" value="female" />
+                        <label for="gender_female">Female</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Contacts</legend>
+            <table cellpadding="4">
+                <tr>
+                    <td>
+                        <label for="tel">Telephone no.:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="tel" name="p_tel" maxlength="8" />
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Address:</td>
+                    <td>
+                        <input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="p_district">
+                            <optgroup label="New Territories">
+                                <option value="islands">Islands</option>
+                                <option value="kwai_tsing">Kwai Tsing</option>
+                                <option value="north">North</option>
+                                <option value="sai_kung">Sai Kung</option>
+                                <option value="sha_tin">Sha Tin</option>
+                                <option value="tai_po">Tai Po</option>
+                                <option value="tsuen_wan">Tsuen Wan</option>
+                                <option value="tuen_mun">Tuen Mun</option>
+                                <option value="yuen_long">Yuen Long</option>
+                            </optgroup>
+                            <optgroup label="Kowloon">
+                                <option value="kowloon_city">Kowloon City</option>
+                                <option value="kwun_tong">Kwun Tong</option>
+                                <option value="sham_shui_po">Sham Shui Po</option>
+                                <option value="wong_tai_sin">Wong Tai Sin</option>
+                                <option value="yau_tsim_mong">Yau Tsim Mong</option>
+                            </optgroup>
+                            <optgroup label="Hong Kong Islands">
+                                <option value="central_western">Central &amp; Western</option>
+                                <option value="eastern">Eastern</option>
+                                <option value="southern">Southern</option>
+                                <option value="wan_chai">Wan Chai</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>
+            <input type="reset" />
+            <input type="submit" />
+        </p>
     </form>
     <a href="booking_success.html">Here to booking success page. Above button not working here.</a>
 </body>
