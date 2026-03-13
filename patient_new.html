@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient</title>
+</head>
+
+<body>
+    <font face="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+        <table width="100%" bgcolor="#C5E6FA" cellspacing="0" cellpadding="8">
+            <tr>
+                <td width="32px">
+                    <a href="booking.html">
+                        <img src="icons/arrow_back.svg" width="24" height="24" />
+                    </a>
+                </td>
+                <td>
+                    <font color="#303F9F">
+                        <h2>Tell us more about you</h2>
+                        <progress max="4" value="1"></progress>
+                    </font>
+                </td>
+            </tr>
+        </table>
+        <form action="booking_type.html" method="post">
+            <table width="100%" cellspacing="0" cellpadding="8">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="#303F9F" size="+1">
+                                    <b>Patient Information</b>
+                                </font>
+                            </legend>
+                            <table cellpadding="8">
+                                <tr>
+                                    <td>
+                                        <label for="name">*Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="name" name="p_name" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="hkid">*HKID</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="hkid" name="p_hkid" minlength="7" maxlength="7"
+                                            required />
+                                        (
+                                        <input type="text" name="p_hkid_last" minlength="1" maxlength="1" size="1"
+                                            required />
+                                        )
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        *Gender
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="gender_male" name="p_gender" value="male" required />
+                                        <label for="gender_male">Male</label>
+                                        <input type="radio" id="gender_female" name="p_gender" value="female"
+                                            required />
+                                        <label for="gender_female">Female</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="dob">*Date of Birth</label>
+                                    </td>
+                                    <td>
+                                        <input type="date" id="dob" name="p_dob" required />
+                                    </td>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="#303F9F" size="+1">
+                                    <b>Contact</b>
+                                </font>
+                            </legend>
+                            <table cellpadding="8">
+                                <tr>
+                                    <td>
+                                        <label for="tel">*Contact no.</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>*Address</td>
+                                    <td>
+                                        <textarea name="p_address" rows="3" cols="30" required></textarea>
+                                        <br />
+                                        <select name="p_district" required>
+                                            <optgroup label="New Territories">
+                                                <option value="islands">Islands</option>
+                                                <option value="kwai_tsing">Kwai Tsing</option>
+                                                <option value="north">North</option>
+                                                <option value="sai_kung">Sai Kung</option>
+                                                <option value="sha_tin">Sha Tin</option>
+                                                <option value="tai_po">Tai Po</option>
+                                                <option value="tsuen_wan">Tsuen Wan</option>
+                                                <option value="tuen_mun">Tuen Mun</option>
+                                                <option value="yuen_long">Yuen Long</option>
+                                            </optgroup>
+                                            <optgroup label="Kowloon">
+                                                <option value="kowloon_city">Kowloon City</option>
+                                                <option value="kwun_tong">Kwun Tong</option>
+                                                <option value="sham_shui_po">Sham Shui Po</option>
+                                                <option value="wong_tai_sin">Wong Tai Sin</option>
+                                                <option value="yau_tsim_mong">Yau Tsim Mong</option>
+                                            </optgroup>
+                                            <optgroup label="Hong Kong Islands">
+                                                <option value="central_western">Central &amp; Western</option>
+                                                <option value="eastern">Eastern</option>
+                                                <option value="southern">Southern</option>
+                                                <option value="wan_chai">Wan Chai</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <input type="reset" />
+                        <input type="submit" />
+                        <a href="booking_type.html">To type select.</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </font>
+</body>
+
+</html>

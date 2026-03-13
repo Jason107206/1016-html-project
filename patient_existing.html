@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existing Patient</title>
+</head>
+
+<body>
+    <font face="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+        <table width="100%" bgcolor="#C5E6FA" cellspacing="0" cellpadding="8">
+            <tr>
+                <td width="32px">
+                    <a href="booking.html">
+                        <img src="icons/arrow_back.svg" width="24" height="24" />
+                    </a>
+                </td>
+                <td>
+                    <font color="#303F9F">
+                        <h2>Welcome back</h2>
+                        <progress max="4" value="1"></progress>
+                    </font>
+                </td>
+            </tr>
+        </table>
+        <form action="booking_type.html" method="post">
+            <table width="100%" cellspacing="0" cellpadding="8">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="#303F9F" size="+1">
+                                    <b>Identity</b>
+                                </font>
+                            </legend>
+                            <table cellpadding="8">
+                                <tr>
+                                    <td>
+                                        <label for="hkid">*<b>First 6 Digits</b> of your HKID</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="hkid" name="p_hkid" minlength="6" maxlength="6"
+                                            required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">
+                                        <i>e.g. Enter 123456 for S<u>123456</u>(7)</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="dob">*Date of Birth:</label>
+                                    </td>
+                                    <td>
+                                        <input type="date" id="dob" name="p_dob" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="tel">*Contact no.</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" required />
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%">
+                <tr>
+                    <td align="right">
+                        <input type="reset" />
+                        <input type="submit" />
+                        <a href="booking_type.html">To type select.</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </font>
+</body>
+
+</html>

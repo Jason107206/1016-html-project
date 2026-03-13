@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Selection</title>
+</head>
+
+<body>
+    <font face="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+        <table width="100%" bgcolor="#C5E6FA" cellspacing="0" cellpadding="8">
+            <tr>
+                <td width="32px">
+                    <a href="booking.html">
+                        <img src="icons/arrow_back.svg" width="24" height="24" />
+                    </a>
+                </td>
+                <td>
+                    <font color="#303F9F">
+                        <h2>Select your preferred slot</h2>
+                        <progress max="4" value="3"></progress>
+                    </font>
+                </td>
+            </tr>
+        </table>
+        <form action="booking_success.html" method="post">
+            <table width="100%" cellspacing="0" cellpadding="8">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="#303F9F" size="+1">
+                                    <b>Date</b>
+                                </font>
+                            </legend>
+                            <input type="date" id="date" name="a_date" required />
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="#303F9F" size="+1">
+                                    <b>Time</b>
+                                </font>
+                            </legend>
+                            <table width="100%" border="1" cellspacing="0" cellpadding="8">
+                                <tr>
+                                    <th>
+                                        <img src="icons/light_mode.svg" />
+                                        Dr. Wong Wan Hang
+                                    </th>
+                                    <th>
+                                        <img src="icons/mode_night.svg" />
+                                        Dr. Sze Yat Sum Yuki
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="0900" name="a_time" required disabled />
+                                        <label for="0900">09:00 [Full]</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1430" name="a_time" required />
+                                        <label for="1430">14:30</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="0930" name="a_time" required disabled />
+                                        <label for="0930">09:30 [Full]</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1500" name="a_time" required />
+                                        <label for="1500">15:00</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1000" name="a_time" required />
+                                        <label for="1000">10:00 [2 Quotas]</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1530" name="a_time" required />
+                                        <label for="1530">15:30</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1030" name="a_time" required />
+                                        <label for="1030">10:30</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1600" name="a_time" required disabled />
+                                        <label for="1600">16:00 [Full]</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1100" name="a_time" required />
+                                        <label for="1100">11:00</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1630" name="a_time" required disabled />
+                                        <label for="1630">16:30 [Full]</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1130" name="a_time" required />
+                                        <label for="1130">11:30</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1700" name="a_time" required />
+                                        <label for="1700">17:00 [1 Quota]</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" bgcolor="#CED6E0">
+                                        Lunch Break
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1730" name="a_time" required />
+                                        <label for="1730">17:30</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1800" name="a_time" required />
+                                        <label for="1800">18:00</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1830" name="a_time" required />
+                                        <label for="1830">18:30 [2 Quotas]</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1330" name="a_time" required />
+                                        <label for="1330">13:30</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1900" name="a_time" required disabled />
+                                        <label for="1900">19:00 [Full]</option>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" id="1400" name="a_time" required />
+                                        <label for="1400">14:00</option>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="1930" name="a_time" required disabled />
+                                        <label for="1930">19:30 [Full]</option>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <input type="reset" />
+                        <input type="submit" />
+                        <a href="booking_success.html">To success booking.</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </font>
+</body>
+
+</html>
