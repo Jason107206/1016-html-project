@@ -4,41 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment</title>
+    <title>Book an Appointment</title>
 </head>
 
 <body>
     <font face="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-        <table width="100%" bgcolor="#C5E6FA" cellspacing="0" cellpadding="8">
-            <tr>
-                <td width="32px">
-                    <a href="index.html">
-                        <img src="icons/arrow_back.svg" width="24" height="24" />
-                    </a>
-                </td>
-                <td>
-                    <font color="#303F9F">
-                        <h2>Have you visited us?</h2>
-                        <progress max="4" value="0"></progress>
-                    </font>
-                </td>
-            </tr>
-        </table>
-        <table width="100%" border="1" cellspacing="0" cellpadding="8">
+        <table width="100%" cellspacing="0" cellpadding="16">
             <tr>
                 <td>
-                    <table width="100%" cellspacing="0" cellpadding="8">
+                    <table width="100%" cellspacing="0" cellpadding="0">
                         <tr>
-                            <td width="72px">
-                                <img src="icons/person_add.svg" width="48" height="48" />
+                            <td>
+                                <a href="booking_time.html">
+                                    <img src="icons/arrow_back.svg" width="24" height="24" />
+                                </a>
                             </td>
                             <td>
-                                <font color="#303F9F">
-                                    <a href="patient_new.html">
-                                        <h3>No (New Patient)</h3>
-                                        <p>Fill in the form to make an appointment.</p>
-                                    </a>
-                                </font>
+                                <table bgcolor="#283593" cellpadding="16">
+                                    <tr>
+                                        <td>
+                                            <font color="#FFFFFF" size="+3">
+                                                <i>ABCD Clinic</i>
+                                            </font>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
@@ -46,18 +36,32 @@
             </tr>
             <tr>
                 <td>
-                    <table width="100%" cellspacing="0" cellpadding="8">
+                    <h1>
+                        Have you visited us before?
+                    </h1>
+                    <table width="100%" border="1" bordercolor="#9E9E9E" cellspacing="0" cellpadding="8">
                         <tr>
-                            <td width="72px">
-                                <img src="icons/login.svg" width="48" height="48" />
+                            <td align="center">
+                                <a href="patient_new.html">
+                                    <p>
+                                        <img src="icons/person_add.svg" width="48" height="48" />
+                                    </p>
+                                    <font color="#303F9F" size="+2">
+                                        No, I'm a <b>new</b> patient
+                                    </font>
+                                    <p>Fill in the personal particular form.</p>
+                                </a>
                             </td>
-                            <td>
-                                <font color="#303F9F">
-                                    <a href="patient_existing.html">
-                                        <h3>Yes (Existing Patient)</h3>
-                                        <p>Enter your HKID to make an appointment.</p>
-                                    </a>
-                                </font>
+                            <td align="center">
+                                <a href="patient_existing.html">
+                                    <p>
+                                        <img src="icons/login.svg" width="48" height="48" />
+                                    </p>
+                                    <font color="#303F9F" size="+2">
+                                        Yes, I'm an <b>existing</b> patient
+                                    </font>
+                                    <p>Enter your HKID to make an appointment.</p>
+                                </a>
                             </td>
                         </tr>
                     </table>
