@@ -46,12 +46,12 @@
                             </font>
                         </p>
                         <fieldset>
-                            <table cellspacing="0" cellpadding="8">
+                            <table width="100%" cellspacing="0" cellpadding="8">
                                 <tr>
                                     <td>
                                         <label for="name">*Name</label>
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="text" id="name" name="p_name" required />
                                     </td>
                                 </tr>
@@ -59,7 +59,7 @@
                                     <td>
                                         <label for="hkid">*HKID</label>
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="text" id="hkid" name="p_hkid" minlength="7" maxlength="7" size="10"
                                             required />
                                         (
@@ -72,7 +72,7 @@
                                     <td>
                                         *Gender
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="radio" id="gender_male" name="p_gender" value="male" required />
                                         <label for="gender_male">Male</label>
                                         <input type="radio" id="gender_female" name="p_gender" value="female"
@@ -84,7 +84,7 @@
                                     <td>
                                         <label for="dob">*Date of Birth</label>
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="date" id="dob" name="p_dob" required />
                                     </td>
                             </table>
@@ -99,19 +99,19 @@
                             </font>
                         </p>
                         <fieldset>
-                            <table cellspacing="0" cellpadding="8">
+                            <table width="100%" cellspacing="0" cellpadding="8">
                                 <tr>
                                     <td>
                                         <label for="tel">*Contact no.</label>
                                     </td>
-                                    <td>
-                                        <input type="number" id="tel" name="p_tel" min="10000000" maxlength="99999999"
+                                    <td align="right">
+                                        <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" size="10"
                                             required />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>*Address</td>
-                                    <td>
+                                    <td align="right">
                                         <textarea name="p_address" rows="3" cols="24" required></textarea>
                                         <br />
                                         <select name="p_district" required>

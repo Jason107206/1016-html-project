@@ -46,12 +46,12 @@
                             </font>
                         </p>
                         <fieldset>
-                            <table cellpadding="8">
+                            <table width="100%" cellspacing="0" cellpadding="8">
                                 <tr>
                                     <td>
                                         <label for="hkid">*<b>First 6 Digits</b> of your HKID</label>
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="number" id="hkid" name="p_hkid" min="1" max="999999" required />
                                     </td>
                                 </tr>
@@ -64,7 +64,7 @@
                                     <td>
                                         <label for="dob">*Date of Birth:</label>
                                     </td>
-                                    <td>
+                                    <td align="right">
                                         <input type="date" id="dob" name="p_dob" required />
                                     </td>
                                 </tr>
@@ -72,8 +72,9 @@
                                     <td>
                                         <label for="tel">*Contact no.</label>
                                     </td>
-                                    <td>
-                                        <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" required />
+                                    <td align="right">
+                                        <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" size="10"
+                                            required />
                                     </td>
                                 </tr>
                             </table>
