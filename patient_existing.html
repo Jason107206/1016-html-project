@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Existing Patient</title>
+    <title>ABCD Clinic - Log in</title>
 </head>
 
 <body>
@@ -19,30 +19,39 @@
             </tr>
             <tr>
                 <td>
+                    <h3>
+                        Step 3/3: Log in (Returning Patient)
+                    </h3>
                     <h1>
-                        Welcome back.
+                        Please fill in your details below.
                     </h1>
                     <p>
-                        <i>Please enter your identity information.</i>
+                        Please fill in all the fields below.
                     </p>
                     <table width="100%" bgcolor="#e1f3f8" border="1" bordercolor="#9e9e9e" cellspacing="0"
                         cellpadding="8">
                         <tr>
+                            <th colspan="2" align="left">
+                                <i>
+                                    Identity Information
+                                </i>
+                            </th>
+                        </tr>
+                        <tr>
                             <td>
-                                <label for="hkid">*<b>First 6 Digits</b> of your HKID</label>
+                                <label for="hkid">
+                                    <b>First 6 Digits</b> of your HKID
+                                </label>
+                                <p></p>
+                                <i>e.g. Enter 123456 for S<u>123456</u>(7)</i>
                             </td>
                             <td align="right">
                                 <input type="number" id="hkid" name="p_hkid" min="1" max="999999" required />
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <i>e.g. Enter 123456 for S<u>123456</u>(7)</i>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>
-                                <label for="dob">*Date of Birth:</label>
+                                <label for="dob">Date of Birth</label>
                             </td>
                             <td align="right">
                                 <input type="date" id="dob" name="p_dob" required />
@@ -50,10 +59,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="tel">*Contact no.</label>
+                                <label for="tel">Contact No.</label>
                             </td>
                             <td align="right">
-                                <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" size="10"
+                                <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" size="12"
                                     required />
                             </td>
                         </tr>

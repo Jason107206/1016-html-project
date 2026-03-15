@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Particulars</title>
+    <title>ABCD Clinic - Sign Up</title>
 </head>
 
 <body>
@@ -19,28 +19,45 @@
             </tr>
             <tr>
                 <td>
+                    <h3>
+                        Step 3/3: Sign Up (New Patient)
+                    </h3>
                     <h1>
-                        Tell us more about you.
+                        Please fill in your details below.
                     </h1>
                     <p>
-                        <i>First, the personal particular.</i>
+                        We'll keep your information confidential.
+                    </p>
+                    <p>
+                        Please fill in all the fields below.
                     </p>
                     <table width="100%" bgcolor="#e1f3f8" border="1" bordercolor="#9e9e9e" cellspacing="0"
                         cellpadding="8">
                         <tr>
+                            <th colspan="2" align="left">
+                                <i>
+                                    Personal Particulars
+                                </i>
+                            </th>
+                        </tr>
+                        <tr>
                             <td>
-                                <label for="name">*Name</label>
+                                <label for="name">
+                                    Full Name
+                                </label>
                             </td>
                             <td align="right">
-                                <input type="text" id="name" name="p_name" required />
+                                <input type="text" name="p_name" id="name" required />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="hkid">*HKID</label>
+                                <label for="hkid">
+                                    HKID No.
+                                </label>
                             </td>
                             <td align="right">
-                                <input type="text" id="hkid" name="p_hkid" minlength="7" maxlength="7" size="10"
+                                <input type="text" name="p_hkid" id="hkid" minlength="7" maxlength="7" size="10"
                                     required />
                                 (
                                 <input type="text" name="p_hkid_last" minlength="1" maxlength="1" size="1" required />
@@ -49,47 +66,51 @@
                         </tr>
                         <tr>
                             <td>
-                                *Gender
+                                Gender
                             </td>
                             <td align="right">
-                                <input type="radio" id="gender_male" name="p_gender" value="male" required />
+                                <input type="radio" name="p_gender" id="gender_male" value="male" required />
                                 <label for="gender_male">Male</label>
-                                <input type="radio" id="gender_female" name="p_gender" value="female" required />
+                                <input type="radio" name="p_gender" id="gender_female" value="female" required />
                                 <label for="gender_female">Female</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="dob">*Date of Birth</label>
+                                <label for="dob">
+                                    Date of Birth
+                                </label>
                             </td>
                             <td align="right">
-                                <input type="date" id="dob" name="p_dob" required />
+                                <input type="date" name="p_dob" id="dob" required />
                             </td>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        <i>Then, the contact information.</i>
-                    </p>
-                    <table width="100%" bgcolor="#e1f3f8" border="1" bordercolor="#9e9e9e" cellspacing="0"
-                        cellpadding="8">
+                        </tr>
+                        <tr>
+                            <th colspan="2" align="left">
+                                <i>
+                                    Contact Information
+                                </i>
+                            </th>
+                        </tr>
                         <tr>
                             <td>
-                                <label for="tel">*Contact no.</label>
+                                <label for="tel">
+                                    Contact No.
+                                </label>
                             </td>
                             <td align="right">
-                                <input type="tel" id="tel" name="p_tel" minlength="8" maxlength="8" size="20"
+                                <input type="tel" name="p_tel" id="tel" minlength="8" maxlength="8" size="20"
                                     required />
                             </td>
                         </tr>
                         <tr>
-                            <td>*Home Address</td>
+                            <td>
+                                <label for="address">
+                                    Home Address
+                                </label>
+                            </td>
                             <td align="right">
-                                <textarea name="p_address" rows="3" cols="30" required>
-                                        Your home address...
-                                </textarea>
+                                <textarea name="p_address" id="address" rows="3" cols="30" required></textarea>
                                 <br />
                                 <select name="p_district" required>
                                     <optgroup label="New Territories">
